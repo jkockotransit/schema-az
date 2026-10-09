@@ -1,0 +1,57 @@
+{
+  "azure": {
+    "label": "Azure",
+    "version": "Azure_Public_Service_Icons_V24",
+    "source_page": "https://learn.microsoft.com/en-us/azure/architecture/icons/",
+    "download_url": "https://arch-center.azureedge.net/icons/Azure_Public_Service_Icons_V24.zip",
+    "sha256": "921594ccd1bf3d9c0a1bd7b6d924e050551a59342f2b353bb74bdcf761c35141",
+    "icons": 712,
+    "built": "2026-10-09T01:59:23Z"
+  },
+  "power-platform": {
+    "label": "Power Platform",
+    "version": "2025-12-18T00:00:00Z",
+    "source_page": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+    "download_url": "https://download.microsoft.com/download/498606aa-6d27-4f13-aa5c-1401078c153b/Power-Platform-icons-scalable.zip",
+    "sha256": "d5abafebbce553690caf7b42dd14b8335bf2c0dfc09f46bd9ac8041187da2c3a",
+    "icons": 8,
+    "built": "2026-10-09T01:59:24Z"
+  },
+  "entra": {
+    "label": "Microsoft Entra",
+    "version": "2023-08-15T00:00:00Z",
+    "source_page": "https://learn.microsoft.com/en-us/entra/architecture/architecture-icons",
+    "download_url": "https://download.microsoft.com/download/3/1/a/31a56038-856a-4489-88e4-ee5a1c4352be/Microsoft%20Entra%20architecture%20icons%20-%20Oct%202023.zip",
+    "sha256": "4e07536706a2d092e6524e5417e2c861333fdbdb41c36f78d44dfa07ccc5eedc",
+    "icons": 14,
+    "built": "2026-10-09T01:59:24Z"
+  },
+  "fabric": {
+    "label": "Microsoft Fabric",
+    "version": "v6.1.0",
+    "source_page": "https://learn.microsoft.com/en-us/fabric/get-started/icons",
+    "download_url": "https://raw.githubusercontent.com/microsoft/fabric-samples/main/docs-samples/Icons.zip",
+    "sha256": "fc22e71b0545ed15e22c53f16bf4fb06ffe72daabd3c90a947a6e481c9675e6b",
+    "icons": 71,
+    "built": "2026-10-09T01:59:26Z"
+  },
+  "dynamics-365": {
+    "label": "Dynamics 365",
+    "version": "2026-01-23T00:00:00Z",
+    "source_page": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+    "download_url": "https://download.microsoft.com/download/498606aa-6d27-4f13-aa5c-1401078c153b/Dynamics-365-icons-scalable.zip",
+    "sha256": "f5f4d96aaa637b71e47136cc74e9a4a69b8a81f7e43c1c5756f00b5cea9ffe02",
+    "icons": 16,
+    "built": "2026-10-09T01:59:26Z"
+  },
+  "microsoft-365": {
+    "label": "Microsoft 365",
+    "version": "2026-10-09",
+    "source_page": "https://learn.microsoft.com/en-us/microsoft-365/solutions/architecture-icons-templates",
+    "download_url": "https://go.microsoft.com/fwlink/?linkid=869455",
+    "sha256": "522c4d43cf98a00380b0836f9ec6e06d81fb99758b258c49b6e5f385c05c547a",
+    "icons": 960,
+    "built": "2026-10-09T01:59:27Z",
+    "note": "Page archivée par Microsoft (avril 2024) : jeu figé"
+  }
+}
