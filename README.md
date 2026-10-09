@@ -30,8 +30,8 @@ Onglet **Actions** > **Construire la bibliothèque d'icônes** > **Run workflow*
 ## Ouvrir dans draw.io
 
 - Web, les 6 bibliothèques préchargées : https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjkockotransit%2Fschema-az%2Fmain%2Fdrawio%2Fazure.xml;Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjkockotransit%2Fschema-az%2Fmain%2Fdrawio%2Fpower-platform.xml;Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjkockotransit%2Fschema-az%2Fmain%2Fdrawio%2Fentra.xml;Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjkockotransit%2Fschema-az%2Fmain%2Fdrawio%2Ffabric.xml;Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjkockotransit%2Fschema-az%2Fmain%2Fdrawio%2Fdynamics-365.xml;Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjkockotransit%2Fschema-az%2Fmain%2Fdrawio%2Fmicrosoft-365.xml
-- Web ou desktop : menu **Fichier > Ouvrir une bibliothèque depuis > URL**, puis coller l'adresse brute d'un fichier, par exemple `https://raw.githubusercontent.com/jkockotransit/schema-az/main/drawio/azure.xml`.
-- Desktop hors ligne : **Fichier > Ouvrir une bibliothèque**, puis choisir un fichier de `C:\Dev\Pro\schema-az\drawio\`.
+- Web, une seule bibliothèque : menu **Fichier > Ouvrir une bibliothèque depuis > URL**, puis coller l'adresse brute d'un fichier, par exemple `https://raw.githubusercontent.com/jkockotransit/schema-az/main/drawio/azure.xml`.
+- Desktop : **Fichier > Ouvrir une bibliothèque**, puis choisir un fichier de `C:\Dev\Pro\schema-az\drawio\`. draw.io desktop fonctionne hors ligne et ne propose pas l'ouverture par URL : la copie locale, mise à jour par **Pull origin**, est la source.
 
 ## Conditions d'utilisation
 

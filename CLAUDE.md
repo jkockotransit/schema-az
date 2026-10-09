@@ -1,7 +1,7 @@
 # schema-az
 
 Contexte : Pro
-Architecture : conforme à REGLES-ARCHITECTURE.md v1.5, avec l'exception E0021 (dépôt public, bibliothèque écrite par l'automatisation), à porter en v1.6
+Architecture : conforme à REGLES-ARCHITECTURE.md v1.7 (dépôt de ressources publiques, section 5 : dépôt public, bibliothèque écrite par l'automatisation, exception E0021)
 
 ## Emplacements
 
@@ -11,12 +11,12 @@ Architecture : conforme à REGLES-ARCHITECTURE.md v1.5, avec l'exception E0021 (
 | Dépôt GitHub | `https://github.com/jkockotransit/schema-az` (**public**, exception E0021) |
 | Documents | `<OneDrive>\Pro\schema-az\Documents\` |
 | Base de connaissance (cahier des charges, CONTEXTE-PROJET.md) | `<OneDrive>\Pro\schema-az\Base-connaissance\` |
-| Fichiers générés hors dépôt (schémas de test) | `<OneDrive>\Pro\schema-az\Sorties\` |
+| Visuels hors dépôt (schémas de test) | `<OneDrive>\Pro\schema-az\Visuels\` |
 | Configuration locale | aucune (pas de `.env`) |
 | Modèles d'IA, datasets | aucun |
 | Éléments communs utilisés | aucun |
 
-Cahier des charges de référence : `<OneDrive>\Pro\schema-az\Base-connaissance\SchemaAz_Cahier-des-charges_V1.2.md`.
+Cahier des charges de référence : `<OneDrive>\Pro\schema-az\Base-connaissance\SchemaAz_Cahier-des-charges_V1.3.md`.
 
 ## Pour Claude
 

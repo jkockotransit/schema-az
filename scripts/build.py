@@ -202,12 +202,14 @@ def main():
             index["icons"] = [i for i in index["icons"] if i["family"] != key] + [
                 {k: v for k, v in e.items() if k != "bytes"} | ({"raw_url": f"{RAW_BASE}/{e['path']}"} if RAW_BASE else {})
                 for e in res]
-    index["icons"].sort(key=lambda i: (i["family"], i["category"].lower(), i["title"].lower()))
-    index["generated"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    index["families"] = {k: {"label": v["label"], "version": v["version"], "icons": v["icons"]} for k, v in manifest.items()}
-    mpath.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-    ipath.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("Familles mises à jour :", ", ".join(changed) or "aucune")
+    if changed or not (mpath.exists() and ipath.exists()):
+        # index et manifeste réécrits seulement si une famille a changé (EF06 : sinon, aucun commit)
+        index["icons"].sort(key=lambda i: (i["family"], i["category"].lower(), i["title"].lower()))
+        index["generated"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        index["families"] = {k: {"label": v["label"], "version": v["version"], "icons": v["icons"]} for k, v in manifest.items()}
+        mpath.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+        ipath.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
+    print("Familles mises à jour :", ", ".join(changed) or "aucune (aucun fichier réécrit)")
     if errors:
         print("Erreurs :", "; ".join(errors), file=sys.stderr)
         sys.exit(1)
