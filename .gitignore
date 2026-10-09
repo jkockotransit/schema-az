@@ -1,0 +1,65 @@
+# .gitignore — modèle v1.4 de claude-config
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Construction / exécutables (les .exe vont dans GitHub Releases)
+build/
+dist/
+*.exe
+*.msi
+
+# Secrets et configuration locale (versionner seulement .env.example, valeurs portables, sans secret)
+.env
+*.key
+*.pem
+secrets.*
+
+# Fichiers générés (ils vont dans OneDrive\<Contexte>\<projet>\Sorties\)
+Sorties/
+output/
+*.log
+
+# Bureautique (elle va dans OneDrive)
+*.docx
+*.xlsx
+*.pptx
+~$*
+
+# Système et éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Modèles IA, datasets et fichiers volumineux (REGLES v1.4, sections 10 et 11 : jamais dans Git)
+# Modèle public : cache local, nom et version dans .env ; modèle adapté : <OneDrive>\<Contexte>\_Ressources\IA\Models
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.parquet
+models/
+datasets/
+
+# Images disque, messageries, archives et sauvegardes (jamais dans Git ; VHDX et PST jamais dans OneDrive)
+*.iso
+*.vhd
+*.vhdx
+*.pst
+*.zip
+*.7z
+*.bak

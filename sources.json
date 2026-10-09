@@ -1,0 +1,39 @@
+{
+  "azure": {
+    "label": "Azure",
+    "page": "https://learn.microsoft.com/en-us/azure/architecture/icons/",
+    "zip_regex": "https://arch-center\\.azureedge\\.net/icons/Azure_Public_Service_Icons_V\\d+\\.zip",
+    "mode": "azure"
+  },
+  "power-platform": {
+    "label": "Power Platform",
+    "page": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+    "zip_regex": "https://download\\.microsoft\\.com/[^\"'\\s<>]*Power-Platform-icons[^\"'\\s<>]*\\.zip",
+    "mode": "generic"
+  },
+  "entra": {
+    "label": "Microsoft Entra",
+    "page": "https://learn.microsoft.com/en-us/entra/architecture/architecture-icons",
+    "zip_regex": "https://download\\.microsoft\\.com/[^\"'\\s<>]*\\.zip",
+    "mode": "generic"
+  },
+  "fabric": {
+    "label": "Microsoft Fabric",
+    "page": "https://learn.microsoft.com/en-us/fabric/get-started/icons",
+    "direct_url": "https://raw.githubusercontent.com/microsoft/fabric-samples/main/docs-samples/Icons.zip",
+    "mode": "fabric"
+  },
+  "dynamics-365": {
+    "label": "Dynamics 365",
+    "page": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+    "zip_regex": "https://download\\.microsoft\\.com/[^\"'\\s<>]*Dynamics-365-icons[^\"'\\s<>]*\\.zip",
+    "mode": "generic"
+  },
+  "microsoft-365": {
+    "label": "Microsoft 365",
+    "page": "https://learn.microsoft.com/en-us/microsoft-365/solutions/architecture-icons-templates",
+    "direct_url": "https://go.microsoft.com/fwlink/?linkid=869455",
+    "mode": "generic",
+    "note": "Page archivée par Microsoft (avril 2024) : jeu figé"
+  }
+}

@@ -1,0 +1,49 @@
+name: Construire la bibliothèque d'icônes
+
+on:
+  workflow_dispatch:
+    inputs:
+      familles:
+        description: "Familles à traiter, séparées par des virgules (vide = toutes)"
+        required: false
+        default: ""
+      forcer:
+        description: "Reconstruire même si le pack Microsoft n'a pas changé"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-icons
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Télécharger les packs Microsoft et générer les bibliothèques
+        env:
+          RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.familles }}" ]; then ARGS="$ARGS --only ${{ inputs.familles }}"; fi
+          if [ "${{ inputs.forcer }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          python scripts/build.py $ARGS
+      - name: Enregistrer les changements
+        if: always()
+        run: |
+          git config user.name "schema-az-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A icons drawio index.json manifest.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "Mise à jour des icônes ($(date -u +%Y-%m-%d))"
+            git push
+          fi
