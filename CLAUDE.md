@@ -1,7 +1,7 @@
 # schema-az
 
 Contexte : Pro
-Architecture : conforme à REGLES-ARCHITECTURE.md v1.7 (dépôt de ressources publiques, section 5 : dépôt public, bibliothèque écrite par l'automatisation, exception E0021)
+Architecture : conforme à REGLES-ARCHITECTURE.md v1.8 (dépôt de ressources publiques, section 5 : dépôt public, bibliothèque écrite par l'automatisation, exception E0021)
 
 ## Emplacements
 
